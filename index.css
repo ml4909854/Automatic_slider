@@ -1,0 +1,47 @@
+*{
+    background-color: black;
+    color: white;
+}
+#slider-container {
+    position: relative;
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+#para {
+    font-size: 45px;
+    text-align: center;
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+#prev,
+#next {
+    /* position: absolute;
+top: 50%; */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#prev-next {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
